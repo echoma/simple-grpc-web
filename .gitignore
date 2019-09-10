@@ -4,3 +4,4 @@ dist
 node_modules
 *_pb2*.py
 *_pb.js
+package-lock.json

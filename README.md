@@ -9,7 +9,7 @@ grpc的数据流是这样的：`grpc-web的客户端`->`envoy gateway`->`server.
 #### 启动envoy
 
 ```shell
-docker run -d -p 8080:8080 -p 9901:9901 --network=host helloworld/envoy
+sudo docker run -d -p 8080:8080 -p 9901:9901 echo/envoy
 ```
 
 #### 其他
@@ -17,7 +17,7 @@ docker run -d -p 8080:8080 -p 9901:9901 --network=host helloworld/envoy
 ###### 构建envoy镜像
 
 ```shell
-docker build -t helloworld/envoy -f ./envoy.Dockerfile .
+sudo docker build -t echo/envoy -f ./envoy.Dockerfile .
 ```
 
 ## 服务端
